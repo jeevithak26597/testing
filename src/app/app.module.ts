@@ -27,6 +27,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { NodeService } from './node.service';
 import {ButtonModule} from 'primeng/button';
 import {CalendarModule} from 'primeng/calendar';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {TabMenuModule} from 'primeng/tabmenu';
+import {MenuItem} from 'primeng/api';
 
 @NgModule({
   declarations: [
@@ -56,7 +59,9 @@ import {CalendarModule} from 'primeng/calendar';
     HttpClientModule,
     PasswordModule,
     ButtonModule,
-    CalendarModule
+    CalendarModule,
+    BrowserAnimationsModule,
+    TabMenuModule
   ],
   providers: [AuthService,WeatherService,NodeService],
   bootstrap: [AppComponent]

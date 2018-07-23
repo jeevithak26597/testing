@@ -1,13 +1,13 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:left">
+<h4>PrimeNg_Tree For Users</h4>
+<div style="text-align:left" class="tree">
   <p-tree [value]="users" 
     selectionMode="checkbox"  
     [style]="{'width': '85%', 'height': '400px'} "
     (onNodeSelect)="nodeSelect($event)">
   </p-tree>
-
 </div>
-
+<h4>weather map for city</h4>
 <div>
     <div class="input-group">
       <input type="text" class="form-control" id="cname" placeholder="Search for..." #cityName />
@@ -34,10 +34,16 @@
     </div>
 </div>
 <div>
+  <h4>Login Form</h4>
 <app-login></app-login>
+<br/>
+<br/>
 </div>
 <div>
+    <h4>Login Form Using PrimeNg</h4>
+ <app-modeldriven-login></app-modeldriven-login>
+</div>
+<div>
+    <h4>Factorial</h4>
 <app-factorial></app-factorial>
 </div>
-<app-modeldriven-login></app-modeldriven-login>
-<!-- <router-outlet></router-outlet> -->

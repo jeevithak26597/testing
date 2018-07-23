@@ -9,22 +9,25 @@ export class User {
   selector: 'app-login',
   template: `
   <form>
+  <div class="form">
   <label>Email</label>
   <input type="email"
          #email>
+         </div>
+         <br/>
+         <br/>
   <label>Password</label>
   <input type="password"
-         #password>
+         #password><br/><br/>
+         <div class="formbtn">
   <button type="button"
           (click)="login(email.value, password.value)"
           [disabled]="!enabled">Login
   </button>
+  </div>
 </form>
-  <a>
-    <span *ngIf="needsLogin()">Login</span>
-    <span *ngIf="!needsLogin()">Logout</span>
-  </a>
-`
+`,
+styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
   @Output() loggedIn = new EventEmitter<User>();
