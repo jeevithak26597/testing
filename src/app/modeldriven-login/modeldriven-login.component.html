@@ -1,0 +1,24 @@
+<form (ngSubmit)="login()"
+    [formGroup]="form">
+    <div class="ui-inputgroup">
+            <label for="float-input">Name</label>
+            <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
+            <input type="text" pInputText placeholder="Username" formControlName="name">         
+    </div>
+    <br>
+    <div>
+    <div class="ui-g-12 ui-md-4">
+    <label for="float-input">Date of birth</label>
+    <p-calendar [(ngModel)]="date1"></p-calendar> {{date1|date}}
+    </div>
+    </div>
+    <div>
+    <label for="float-input">Email</label>
+    <input type="email" formControlName="email">
+    </div>
+    <div>
+    <label for="float-input">Password</label>
+    <input type="password" pPassword [(ngModel)]="property" formControlName="password"/>
+    </div>
+    <button pButton type="button" label="Login"></button>
+</form>

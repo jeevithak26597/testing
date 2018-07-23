@@ -11,21 +11,30 @@ export class FactorialComponent implements OnInit {
 
   ngOnInit() {
   }
-  fact(num:number)
+  f=1;  
+  str="Given number is negative number";
+  fact(num:number):number|string
   {
     console.log(num);
-  var f=1;
-  if(num<0)
-  {
-     alert("Given number is negative number"+f);
+
+    if(num==0)
+    {
+      alert("Factorial of a given number "+this.f);
+    return this.f;
+    }
+   else if (num > 0) {
+      this.f = this.f * num;
+      this.fact(num - 1);
+      alert("Factorial of a given number "+this.f);
+      return this.f; 
   }
-  else
-  {
-  for(var i=1;i<=num;i++)
-  {
-  var f=f*i;
+  else{
+    
+     alert(this.str);
+     return this.str;
   }
-  alert("Factorial of a given number "+f);
- }
+   
+  
+//  }
  }
 }
