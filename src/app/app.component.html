@@ -1,12 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<h4>PrimeNg_Tree For Users</h4>
-<div style="text-align:left" class="tree">
-  <p-tree [value]="users" 
-    selectionMode="checkbox"  
-    [style]="{'width': '85%', 'height': '400px'} "
-    (onNodeSelect)="nodeSelect($event)">
-  </p-tree>
-</div>
+
 <h4>weather map for city</h4>
 <div>
     <div class="input-group">
@@ -40,10 +33,19 @@
 <br/>
 </div>
 <div>
-    <h4>Login Form Using PrimeNg</h4>
- <app-modeldriven-login></app-modeldriven-login>
-</div>
-<div>
-    <h4>Factorial</h4>
+  <h4>Factorial</h4>
 <app-factorial></app-factorial>
+</div>
+<h4>PrimeNg_Tree For Users</h4>
+<div style="text-align:left" class="tree">
+  <p-tree [value]="users" 
+    selectionMode="checkbox"  
+    [style]="{'width': '85%', 'height': '400px'} "
+    (onNodeSelect)="nodeSelect($event)">
+  </p-tree>
+</div>
+
+<div>
+  <h4>Login Form Using PrimeNg</h4>
+<app-modeldriven-login></app-modeldriven-login>
 </div>

@@ -8,6 +8,5 @@ scorer.addBatsman(batsman2);
 scorer.calculateScore([1, 2, 0, 0, 4, 1, 6, 2, 1, 3]);
 scorer.printScore();
 
-// Here I need to update the para element in the dom
 
 document.getElementById('totalScore').innerHTML = scorer.totalScore + '';
